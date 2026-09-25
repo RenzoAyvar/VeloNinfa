@@ -47,7 +47,7 @@ Proyecto de prototipo para estimar la afluencia turística de El Velo de las Nin
 
 ### 1) Preparar la instancia EC2
 
-- Ubuntu 22.04 LTS
+- Ubuntu 26.04 LTS
 - Abrir puertos: 22 y 80
 - Instalar dependencias del sistema:
   ```bash
