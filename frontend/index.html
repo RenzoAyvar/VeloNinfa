@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VeloPredict</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="panel card">
+        <header class="header">
+          <h1>VELOPREDICT</h1>
+        </header>
+
+        <div class="location-block">
+          <h2>El Velo de las Ninfas</h2>
+          <p>Tambillo Chico, Huánuco</p>
+        </div>
+
+        <div class="form-group">
+          <label for="dateInput">Seleccione una fecha</label>
+          <input id="dateInput" type="date" />
+        </div>
+
+        <button id="predictBtn" class="primary-btn">PREDECIR</button>
+
+        <div id="errorBox" class="error-box hidden" aria-live="polite"></div>
+      </section>
+
+      <section id="resultPanel" class="panel result-card hidden">
+        <h3 id="resultTitle">Predicción para --</h3>
+
+        <div class="result-main">
+          <span id="visitorsValue" class="visitors">0</span>
+          <span class="label">visitantes</span>
+        </div>
+
+        <div id="levelBadge" class="level-badge">Baja</div>
+
+        <div class="metrics">
+          <div class="metric-row">
+            <span>Temperatura</span>
+            <strong id="tempValue">--</strong>
+          </div>
+          <div class="metric-row">
+            <span>Prob. de lluvia</span>
+            <strong id="rainValue">--</strong>
+          </div>
+          <div class="metric-row">
+            <span>Fin de semana</span>
+            <strong id="weekendValue">--</strong>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>
