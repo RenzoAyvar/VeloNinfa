@@ -5,7 +5,7 @@ sudo apt-get update
 sudo apt-get install -y git python3 python3-venv python3-pip
 
 REPO_DIR="/opt/velopredict"
-REPO_URL="https://github.com/<TU_USUARIO>/<TU_REPOSITORIO>.git"
+REPO_URL="https://github.com/RenzoAyvar/VeloNinfa.git"
 
 sudo mkdir -p "$REPO_DIR"
 if [ ! -d "$REPO_DIR/.git" ]; then
